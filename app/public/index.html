@@ -8,15 +8,20 @@
     <title>Scroll Fix Sample</title>
 </head>
 
-<body>
-    <header class="site-header">
-        <div>
+<body id="form-body" class="form-body">
+    <div class="container form-container">
+        <header class="fixed-menu">
             <button type="button" class="btn btn-primary js-btn-modal" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">モーダル</button>
-        </div>
-    </header>
-    <div class="container">
+            <button type="button" class="btn btn-primary js-btn-menu">メニュー</button>
+        </header>
 
+        <!-- メニュー画面 -->
+        <div class="js-menu modal-menu d-none">
+            メニュー
+        </div>
+
+        <!-- テーブル-->
         <table class="table table-striped">
             <thead class="table-dark">
                 <tr>
