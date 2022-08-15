@@ -1,6 +1,6 @@
-# sample-webpack-ignore-import
+# sample-javascript-scroll-fix-in-modal
 
-importしているモジュールをバンドルから除外する検証
+モーダル表示時に元画面をFIXさせておくサンプル
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=true} -->
 
@@ -14,7 +14,7 @@ importしているモジュールをバンドルから除外する検証
 
 ## 目的
 
-importしているモジュールをバンドル対象外にする検証
+モーダル表示時に元画面をFIXさせておくサンプル
 
 
 ## 環境
@@ -28,15 +28,17 @@ importしているモジュールをバンドル対象外にする検証
 
 ```bash
 git clone [リポジトリURL]
-cd sample-webpack-ignore-import
+cd sample-javascript-scroll-fix-in-modal
 
 ./run.sh npm-ci
 ```
 
-webpack でバンドルしてから実行してください
+webpack でバンドルしてください
 
 ```bash
-# sample-webpack-ignore-importフォルダで実行する
-./run.sh build
-./run.sh exec
+# sample-javascript-scroll-fix-in-modalフォルダで実行する
+./run.sh dev
 ```
+
+`app/dist`フォルダをブラウザからアクセスできるように設定し、index.htmlへアクセスしてください。
+またはVSCodeのLiveServerを使うとsample-javascript-scroll-fix-in-modalフォルダがブラウザからアクセスできるようになるので、app/dist/index.htmlへアクセスしてください。

@@ -7,12 +7,12 @@ function display_help {
     echo "  command [arguments]"
     echo "";
     echo "command:";
-    echo "  build       build by webpack";
+    echo "  dev         build by webpack(for development)";
+    echo "  prod        build by webpack(for production)";
     echo "  watch       build by webpack(mode: watch)";
     echo "  npm-ci      npm install(ci)";
-    echo "  exec        exec app.js";
-    echo "  clean       cleanup dist directory";
     echo "  lint        Exec ESLint";
+    echo "  clean       cleanup dist directory";
     echo "  help        Display help for a command";
     echo "";
     exit 0;
@@ -46,9 +46,6 @@ elif [ "$1" = "npm-ci" ]; then
 
 elif [ "$1" = "lint" ]; then
     npm run lint
-
-elif [ "$1" = "exec" ]; then
-    node dist/app.js
 
 elif [ "$1" = "clean" ]; then
     rm -rf node_modules
